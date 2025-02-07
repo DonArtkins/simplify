@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Simplify</h1>
+    <h1>Simplify.</h1>
     <TaskForm />
 
     <div v-if="taskStore.loading">Loading tasks...</div>
