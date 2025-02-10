@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
 import { RouterLink, useRoute } from "vue-router";
+import heroImage from "@/assets/hero.jpg";
 
 const route = useRoute();
 const isMenuOpen = ref(false);
@@ -35,14 +36,17 @@ const handleLinkClick = () => {
     <nav class="navbar">
       <RouterLink to="/" class="logo">
         <div class="nav-image">
-          <img src="/hero.jpg" alt="logo" />
+          <img :src="heroImage" alt="logo" />
         </div>
         <p>Simp<span>lify.</span></p>
       </RouterLink>
 
       <menu>
         <ul :class="{ active: isMenuOpen }">
-          <li v-for="link in ['Home', 'About', 'Services', 'Blog', 'Contact']" :key="link">
+          <li
+            v-for="link in ['Home', 'About', 'Services', 'Blog', 'Contact']"
+            :key="link"
+          >
             <RouterLink
               :to="link === 'Home' ? '/' : `/${link.toLowerCase()}`"
               class="nav-link"

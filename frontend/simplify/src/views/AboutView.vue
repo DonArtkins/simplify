@@ -1,5 +1,12 @@
+<script setup>
+import heroImage from "@/assets/hero.jpg"; // Import the hero image
+</script>
+
 <template>
-  <div class="about-container">
+  <div
+    class="about-container"
+    :style="{ backgroundImage: `url(${heroImage})` }"
+  >
     <div class="hero-section">
       <h1>About Simplify</h1>
       <p class="tagline">Streamline your day, achieve your way</p>
@@ -71,10 +78,13 @@
 <style scoped>
 .about-container {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/hero.jpg") no-repeat center center;
+  /* Removing direct URL reference */
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.6); /* Fallback for image loading */
+  background-blend-mode: overlay; /* Ensure the gradient blends with the background */
 }
 
 .hero-section {

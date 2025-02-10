@@ -3,6 +3,7 @@ import TaskForm from "@/components/TaskForm.vue";
 import TaskItem from "@/components/TaskItem.vue";
 import { onMounted, ref } from "vue";
 import { useTaskStore } from "@/stores/task";
+import heroImage from "@/assets/hero.jpg";
 
 const taskStore = useTaskStore();
 
@@ -22,7 +23,7 @@ const randomNumber = ref(
 </script>
 
 <template>
-  <div class="hero">
+  <div class="hero" :style="{ backgroundImage: `url(${heroImage})` }">
     <div class="task-container">
       <div class="form-section">
         <h1>Welcome to Simplify</h1>
@@ -132,8 +133,6 @@ const randomNumber = ref(
 
 <style scoped>
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
