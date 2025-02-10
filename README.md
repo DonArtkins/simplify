@@ -1,4 +1,4 @@
-# Simplify. - A Simple Task Management App
+# Simplify - A Simple Task Management App
 
 Simplify. is a basic CRUD application for managing tasks, built using Vue.js (with Pinia), Express.js, and Neon Postgres.
 
@@ -19,7 +19,7 @@ Simplify. is a basic CRUD application for managing tasks, built using Vue.js (wi
 1.  **Clone the repository:**
     ```bash
     git clone <your_repository_url>
-    cd simplify-app
+    cd simplify
     ```
 
 2.  **Backend Setup:**
@@ -33,6 +33,7 @@ Simplify. is a basic CRUD application for managing tasks, built using Vue.js (wi
 3.  **Frontend Setup:**
     ```bash
     cd frontend
+    cd simplify
     npm install
     Create a `.env` file with `VITE_API_BASE_URL=http://localhost:3000/api`.
     Run the client: `npm run dev`

@@ -1,6 +1,6 @@
-# Contributing to Simplify.
+# Contributing to Simplify
 
-We welcome contributions to Simplify.! Here's how you can help:
+We welcome contributions to Simplify! Here's how you can help:
 
 ## How to Contribute
 
@@ -14,7 +14,7 @@ We welcome contributions to Simplify.! Here's how you can help:
 
 ## Code Style
 
-Please follow the existing code style guidelines in the project. We use ESLint and Prettier to enforce consistent code formatting.
+Please follow the existing code style guidelines in the project. We use Prettier to enforce consistent code formatting.
 
 ## Reporting Bugs
 
@@ -32,4 +32,4 @@ If you have an idea for a new feature or enhancement, please create a new issue 
 
 ## Thank You!
 
-Thank you for your interest in contributing to Simplify.!
+Thank you for your interest in contributing to Simplify!

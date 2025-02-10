@@ -1,0 +1,64 @@
+/* Initial Setting */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  color: var(--text-dr);
+}
+
+/* base css which has the root theme */
+:root {
+  /* Color Scheme */
+  --primary: #fde0a0;
+  --secondary: #a84df3;
+  --accent: #a02711;
+  --slate: #f5d48c;
+  --text-lt: #f5f5f5;
+  --text-dr: #2d2d2d;
+}
+
+/* Custom Scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--slate);
+  border-radius: 80px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 80px;
+  border: 2px solid var(--slate);
+}
+
+/* Firefox scrollbar customization */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--slate);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--primary);
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 73.4vh;
+}
+
+/* ======= MEDIA QUERIES ======= */
+@media (max-width: 768px) {
+  /* main {
+    min-height: 50vh;
+  } */
+}
